@@ -1,0 +1,576 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow: hidden;
+}
+
+body {
+    line-height: 1;
+}
+
+#content-outer-div {
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgba(0, 128, 0, 0);
+    overflow: hidden;
+}
+
+#content-inner-div {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: -15px;
+    overflow: auto;
+}
+
+
+/* https://drive.google.com/uc?export=view&id=1bFeRPeX6-c1nzZeDXCE8ECGd4qr-ghgO */
+
+.container-down {
+    margin-top: 50px;
+}
+
+.master-menu {
+    background-color: rgb(253, 83, 83, 0);
+    border: 2px solid rgb(36, 169, 83);
+    height: 150px;
+    border-radius: 5px;
+    width: 130px;
+    position: fixed;
+    top: 70px;
+    left: 235px;
+}
+
+
+/* https://drive.google.com/uc?export=view&id=1wvMzAh9ZYJ-4LXeJofgR06qTbTQglzpq, */
+
+
+/* https://drive.google.com/open?id=1FMFwmc5pLB30yfkfgmCbgih0ynT_Ntx0 */
+
+
+/* https://drive.google.com/uc?export=view&id=1FMFwmc5pLB30yfkfgmCbgih0ynT_Ntx0 */
+
+
+/* https://drive.google.com/uc?export=view&id=1FoUmXOlhQ7iRMsWf-yusFikKNoW0MU2D */
+
+.content-skelton {
+    /* background-image: url(https://drive.google.com/uc?export=view&id=1wvMzAh9ZYJ-4LXeJofgR06qTbTQglzpq); */
+    /* background-image: url(https://drive.google.com/uc?export=view&id=1FoUmXOlhQ7iRMsWf-yusFikKNoW0MU2D); */
+    background-color: #ff0000;
+    min-width: 100%;
+    height: 700px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.skills-section {
+    width: 100%;
+    height: 700px;
+    background-color: pink;
+    display: flex;
+}
+
+.projects-section {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(184, 230, 79);
+    display: flex;
+}
+
+.blog-section {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(91, 235, 175);
+    display: flex;
+}
+
+.resume-section {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(91, 226, 235);
+    display: flex;
+}
+
+.about-section {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(91, 141, 235);
+    display: flex;
+}
+
+.div-headerbase64 {
+    width: 14%;
+    height: 50px;
+    top: 5px;
+    color: #fff;
+    text-align: center;
+    left: 25px;
+    float: left;
+    background-color: rgba(197, 81, 81, 0);
+    position: absolute;
+}
+
+.div-header {
+    width: 14%;
+    height: 50px;
+    top: 5px;
+    color: #fff;
+    text-align: center;
+    left: 25px;
+    float: left;
+    background-color: rgba(197, 81, 81, 0);
+    position: absolute;
+}
+
+.div-header text.logo-text {
+    font-family: Greenwich Mean;
+    font-size: 32pt;
+    position: absolute;
+    left: 0px;
+    top: 15%;
+}
+
+@media only screen and (max-width: 360px) {
+    .div-header text.logo-text {
+        font-family: Greenwich Mean;
+        color: white;
+        font-size: 22pt;
+        position: absolute;
+        padding: 1px 0 0 0;
+    }
+    div.top-right-mobile-navigaton #mini-mobile-menu-bar {
+        float: right;
+        position: -webkit-sticky;
+        margin: 10px 0px 15px 15px;
+        right: 15px;
+        background-color: transparent;
+        padding: 8px;
+    }
+    nav>a {
+        visibility: hidden;
+    }
+    .master-menu {
+        background-color: rgba(253, 83, 83, 0);
+        border: 2px solid rgb(36, 169, 83);
+        height: 100px;
+        border-radius: 2px;
+        width: 80px;
+        position: fixed;
+        top: 65px;
+        left: 33px;
+    }
+    div.master-menu table.vitamins {
+        width: 100%;
+        height: 100%;
+        border-collapse: collapse;
+        background: #e91e1e00;
+        color: rgb(255, 255, 255);
+    }
+    div.master-menu table.vitamins th,
+    div.master-menu table.vitamins tr {
+        text-align: center;
+        font-size: 10px;
+        padding: 1px;
+    }
+    nav.nav-right section#sub-menu table.nextMenu th,
+    nav.nav-right section#sub-menu table.nextMenu tr {
+        text-align: center;
+        font-size: 10px;
+        padding: 1px;
+    }
+    nav.nav-right>i.dirArrow {
+        position: absolute;
+        font-size: 12pt;
+        left: 103px;
+        color: white;
+        border: 1px solid rgba(255, 255, 0, 0);
+        padding: 1px 10px 1px 15px;
+        transform: rotate(180deg);
+    }
+    nav.nav-right>section#sub-menu {
+        border: 1px solid rgb(229, 255, 0);
+        /* height: 76.7px; */
+        border-radius: 5px;
+        width: 80px;
+        position: absolute;
+        left: 139px;
+        background-color: rgba(218, 30, 30, 0);
+    }
+    table.nextMenu th.bottomT {
+        border-bottom: 1px solid rgb(229, 255, 0);
+    }
+    .div-header {
+        width: 38%;
+        height: 40px;
+        top: 10px;
+        color: #fff;
+        text-align: center;
+        left: 112px;
+        float: left;
+        background-color: rgba(197, 81, 81, 0);
+        position: absolute;
+    }
+    .nav4 {
+        font-size: 30px;
+        position: absolute;
+        margin: 230px 0 0 40px;
+        color: white;
+    }
+    .nav5 {
+        font-size: 17px;
+        transform: translate( -50%, -50%);
+        margin: 290px 0 0 170px;
+        color: white;
+    }
+    div.div-sidebar {
+        width: 110px;
+        float: left;
+        right: 5px;
+        height: 385px;
+        background: #00000069;
+        border: 1px solid rgb(36, 169, 83);
+        border-radius: 3%;
+        position: sticky;
+        margin: 10px auto;
+    }
+    div.div-sidebar .photo-div {
+        width: 69%;
+        height: 20%;
+        top: -12%;
+        left: 21px;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    div.div-sidebar .sidebar-navigation {
+        width: 90%;
+        height: 78%;
+        top: 10%;
+        text-align: center;
+        left: 9px;
+        position: absolute;
+        background-color: rgba(0, 0, 255, 0);
+    }
+    div.div-sidebar div.photo-div .image-circle {
+        border-radius: 50%;
+        height: 88px;
+        left: 10px;
+        width: 88px;
+        position: absolute;
+        top: -5px;
+    }
+    div.sidebar-navigation>a {
+        color: rgba(255, 255, 255, 1);
+        text-transform: uppercase;
+    }
+    div.sidebar-navigation>table.sideTable,
+    div.sidebar-navigation>th.sideTable,
+    div.sidebar-navigation>td.sideTable {
+        border: 1px solid rgba(255, 255, 255, 0.685);
+        padding: 6px 5px 6px 4px;
+        font-size: 10px;
+        text-transform: uppercase;
+        border-collapse: separate;
+        border-spacing: 0 10px;
+    }
+    th.sideTable {
+        text-align: center;
+    }
+    .top-right-mobile-navigaton {
+        width: 5%;
+        position: absolute;
+        height: 100%;
+        right: 1px;
+        float: right;
+        top: 0px;
+        background-color: #00000000;
+        color: rgb(255, 255, 255);
+        font-size: 18pt;
+        text-align: center;
+    }
+    .top-right-mobile-navigaton b {
+        top: 0px;
+        float: left;
+        right: -1px;
+        bottom: 0px;
+        padding: 12.5px 2px 10px 3px;
+        position: absolute;
+        color: black;
+        background-color: rgb(229, 255, 0);
+    }
+    div.top-right-mobile-navigaton a {
+        font-size: 13pt;
+        position: sticky;
+        border-radius: 8px;
+        padding: 5px 10px 5px 10px;
+        color: rgb(255, 255, 255);
+    }
+    div.top-right-mobile-navigaton a#apps {
+        float: left;
+        margin: 13px 15px 13px 35px;
+    }
+    .div-sidebar {
+        width: 200px;
+        top: 150px;
+        height: 405px;
+        background: #00000069;
+        border: 1px solid rgb(36, 169, 83);
+        border-radius: 3%;
+        position: relative;
+        z-index: 1;
+        margin: 10px auto;
+    }
+    div.div-sidebar .toggle-button {
+        width: 10%;
+        height: 45px;
+        top: 160px;
+        font-size: 10px;
+        left: 8px;
+        float: right;
+        text-align: center;
+        position: relative;
+        border: 1px solid rgb(36, 169, 83);
+        background-color: rgb(0, 0, 0);
+    }
+    /* div.top-right-mobile-navigaton a.text-border {
+        border: 1px solid rgba(229, 255, 0, 0);
+        padding: 5px 5px 5px 5px;
+        border-radius: 8%;
+    } */
+}
+
+.div-sidebar {
+    width: 200px;
+    float: left;
+    top: 150px;
+    margin: auto;
+    right: 5px;
+    height: 405px;
+    background: #00000069;
+    border: 1px solid rgb(36, 169, 83);
+    border-radius: 3%;
+    position: fixed;
+    z-index: 1;
+    margin: 10px auto;
+}
+
+.nav-right {
+    height: 60px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.438);
+    z-index: 1;
+    padding: 15px 1px 15px 1px;
+    position: fixed;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+}
+
+.text-border {
+    border: 1px solid rgba(229, 255, 0, 0);
+    border-radius: 8%;
+}
+
+nav.nav-right>a {
+    color: rgb(255, 255, 255);
+    padding: 8px 12px 8px 12px;
+    font-size: 22px;
+    float: right;
+    top: -5px;
+    margin-right: 12px;
+    position: relative;
+}
+
+
+/* nav.nav-right a#a4 {
+   
+} */
+
+nav.nav-right a#a1 {
+    left: 255px;
+    float: left;
+}
+
+nav>a:hover:not(.active) {
+    color: #000000;
+    background: rgb(229, 255, 0);
+    transition: all 0.5s ease-in-out;
+}
+
+.photo-div {
+    width: 65%;
+    height: 30%;
+    top: -16%;
+    left: 33px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.sidebar-navigation {
+    width: 90%;
+    height: 83%;
+    top: 15%;
+    text-align: center;
+    left: 9px;
+    position: absolute;
+    background-color: rgba(0, 0, 255, 0);
+}
+
+.image-circle {
+    border-radius: 50%;
+    height: 128px;
+    width: 128px;
+    position: absolute;
+    top: -5px;
+}
+
+div.sidebar-navigation>a {
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+}
+
+table.sideTable,
+th.sideTable,
+td.sideTable {
+    border: 3px solid rgba(255, 255, 255, 0.685);
+    padding: 6px 15px 6px 14px;
+    font-size: 17px;
+    text-transform: uppercase;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+th.sideTable {
+    text-align: center;
+}
+
+i.dirArrow {
+    position: absolute;
+    font-size: 25pt;
+    /* top: 65px; */
+    left: 363px;
+    color: white;
+    border: 1px solid rgba(255, 255, 0, 0);
+    padding: 1px 10px 1px 15px;
+    transform: rotate(180deg);
+}
+
+th.sideNav:hover {
+    background: rgb(36, 169, 83);
+    transition: all 0.5s ease-in-out;
+}
+
+th.sideNav:hover>a {
+    color: black;
+}
+
+.toggle-button {
+    width: 12%;
+    height: 45px;
+    top: 183px;
+    font-size: 15px;
+    left: 12px;
+    float: right;
+    text-align: center;
+    position: relative;
+    border: 1px solid rgb(36, 169, 83);
+    background-color: rgb(0, 0, 0);
+}
+
+table.vitamins {
+    width: 100%;
+    height: 146px;
+    border-collapse: collapse;
+    background: #e91e1e00;
+    color: rgb(255, 255, 255);
+}
+
+section#sub-menu {
+    border: 2px solid rgb(255, 255, 0);
+    /* height: 76.7px; */
+    border-radius: 5px;
+    width: 130px;
+    position: absolute;
+    left: 429px;
+    background-color: rgba(218, 30, 30, 0);
+}
+
+table.nextMenu {
+    width: 100%;
+    /* height: 73px; */
+    border-collapse: collapse;
+    background: #21212100;
+    color: rgb(255, 255, 255);
+}
+
+table.vitamins th,
+table.vitamins tr {
+    text-align: center;
+    font-size: 15px;
+    padding: 2px;
+}
+
+table.nextMenu th,
+table.nextMenu tr {
+    text-align: center;
+    font-size: 15px;
+    padding: 2px;
+}
+
+table.vitamins th.bottomT {
+    border-bottom: 1px solid rgb(36, 169, 83);
+}
+
+table.vitamins th.menuTh {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+table.nextMenu th.bottomT {
+    border-bottom: 1px solid rgb(255, 255, 0);
+}
+
+table.nextMenu th.menuTh1,
+table.nextMenu th.menuTh2,
+table.nextMenu th.menuTh3,
+table.nextMenu th.menuTh4,
+table.nextMenu th.menuTh5,
+table.nextMenu th.menuTh6 {
+    background-color: rgba(0, 0, 0, 0.644);
+}
+
+table.vitamins th a {
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+table.nextMenu th a {
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+table.vitamins th:hover {
+    background-color: rgb(36, 169, 83);
+    transition: 1s;
+}
+
+table.nextMenu th:hover {
+    background-color: rgb(36, 169, 83);
+    transition: 1s;
+}
+
+table.vitamins th:hover>a {
+    color: black;
+}
+
+table.nextMenu th:hover>a {
+    color: black;
+}

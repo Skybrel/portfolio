@@ -1,0 +1,25 @@
+{% extends "portfolio/base.html" %}
+  {% load static %}
+  {% block title %}
+    
+  {% endblock %}
+  {% block loading %}
+      
+  {% endblock %}
+
+  {% block bodycontent %}
+    <nav class="nav-right-base64">
+    
+      <div class="div-header">
+        <text style="font-family:Steamy; color:white; font-size:42pt;position:absolute;left:8px;top:-13px;">
+            <tspan>Base64</tspan>
+        </text>
+      </div>
+        <a class="text-border textr clickme" href="/apps/base64-encoder/" id="encoder">Encoder</a> 
+        <a class="text-border textr clickme" href="/apps/base64-decoder/" id="decoder">Decoder</a> 
+        <a class="text-border textr clickme" href="#" id="about">About</a>
+    </nav>
+    {% block base64Body %}
+        
+    {% endblock %}
+  {% endblock %}

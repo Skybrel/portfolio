@@ -1,0 +1,51 @@
+{% extends "portfolio/base.html" %}
+  {% load static %}
+  {% block title %}
+    <title>Base64 | Decoder</title>
+  {% endblock %}
+  {% block loading %}
+      
+  {% endblock %}
+
+  {% block bodycontent %}
+    <nav class="nav-right-base64">
+      <div class="div-headerbase64">
+        <text class="logo-text">
+            <tspan>Base64</tspan>
+        </text>
+      </div>
+        <a class="text-border textr clickme" href="/apps/base64-encoder/" id="encoder">Encoder</a> 
+        <a class="text-border textr clickme" href="/apps/base64-decoder/" id="decoder">Decoder</a> 
+        <a class="text-border textr clickme" href="#" id="about">About</a>
+    </nav>
+    {% block base64Body %}
+    <div class="content-base64">
+        <div class="div-box3">
+            <div class='warning-box' style='text-align:center;color:black;font-size:20pt;'><span style='background-color:tomato;padding:1px 35px;'>Please Enter Base64 Code !</span></div>
+             <form class="decoder-form" method="POST" action="/user/download-file/">
+             {% csrf_token %}
+             <input type="hidden" name="id" id="id">
+             <textarea class="input-text" id="coded-text" name="coded-text"></textarea>
+             <input type="input" name="fileExt-name" id="fileExt-name" style="display:none;">
+             <input type="submit" id="input-submit" name="input-submit" style="display:none;">
+             </form>
+        </div>
+        <div class="div-download-box">
+            <h4> Decoder Block</h4>
+                <div id="visible-toggle">
+                    <h5 style="font-size:13pt;margin-left: 15px;float:left;"><em>Custom Name ?</em></h5>
+                        <label class="switch" id="switch-off">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                </div>
+            <input id="filename" type="input">
+            <button class="download-btn"><i style="top:3px;left:-5px;" class="glyphicon glyphicon-download-alt"></i>Download</button>
+        </div>
+
+        <div class="div-bottom">
+        </div>
+    </div>
+    {% endblock %}
+   
+  {% endblock %}

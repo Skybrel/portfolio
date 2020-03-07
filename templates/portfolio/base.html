@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% block title %}
+    {% endblock %}
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="{% static '/skybrel/bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static '/skybrel/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css' %}">    
+    <link rel="stylesheet" href="{% static '/skybrel/bower_components/Ionicons/css/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static '/plugins/iCheck/square/blue.css' %}">
+    <link rel="stylesheet" href="{% static '/skybrel/dist/css/AdminLTE.min.css' %}">
+    <link rel="stylesheet" href="{% static '/skybrel/dist/css/my.css' %}">
+    <link rel="stylesheet" href="{% static '/skybrel/dist/css/skybrel_main.css' %}">
+    <link rel="stylesheet" href="{% static '/skybrel/dist/css/baseApp.css' %}">
+    <link href="{% static '/skybrel/lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static '/skybrel/lib/animate/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static '/skybrel/lib/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+    <link href="{% static '/skybrel/lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static '/skybrel/lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static '/skybrel/dist/css/skins/_all-skins.min.css' %}">
+    <link rel="stylesheet" href="{% static '/skybrel/bower_components/morris.js/morris.css' %}">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/skybrel/bower_components/jvectormap/jquery-jvectormap.css' %}">
+    <link rel="stylesheet" href="{% static '/skybrel/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css' %}">
+    <link rel="stylesheet" href="{% static '/skybrel/bower_components/bootstrap-daterangepicker/daterangepicker.css' %}">
+    <link rel="stylesheet" href="{% static '/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+{% block loading %}
+{% endblock %}
+
+<body class="hold-transition lockscreen">
+<div class="se-pre-con"></div>
+  {% block navigation %}
+  {% endblock %}
+<div id="container1"><div id="container2">
+  {% block bodycontent %}
+  {% endblock %}
+</div></div>
+<script src="{% static '/skybrel/bower_components/jquery/dist/jquery.min.js'%}"></script>
+<script src="{% static '/skybrel/bower_components/jquery-ui/jquery-ui.min.js' %}"></script>
+
+<script>
+  $.widget.bridge('uibutton', $.ui.button);
+</script>
+  
+<script src="{% static '/skybrel/dist/js/skyQuery.js' %}"></script>
+<script src="{% static '/skybrel/bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+<script src="{% static '/skybrel/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js' %}"></script>
+<script src="{% static '/skybrel/bower_components/datatables.net/js/jquery.dataTables.min.js' %}"></script>
+<script src="{% static '/skybrel/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js' %}"></script>
+<script src="{% static '/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js' %}"></script>
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+<script src="{% static '/plugins/jvectormap/jquery-jvectormap-world-mill-en.js' %}"></script>
+<script src="{% static '/skybrel/bower_components/jquery-knob/dist/jquery.knob.min.js' %}"></script>
+<script src="{% static '/skybrel/bower_components/moment/min/moment.min.js' %}"></script>
+<script src="{% static '/skybrel/bower_components/bootstrap-daterangepicker/daterangepicker.js' %}"></script>
+<script src="{% static '/skybrel/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js' %}"></script>
+<script src="{% static '/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js' %}"></script>
+<script src="{% static '/skybrel/bower_components/jquery-slimscroll/jquery.slimscroll.min.js' %}"></script>
+<script src="{% static '/skybrel/lib/jquery/jquery.min.js' %}"></script>
+<script src="{% static '/skybrel/lib/jquery/jquery.touchSwipe.min.js' %}"></script>
+
+<script src="{% static '/skybrel/lib/jquery/jquery-migrate.min.js' %}"></script>
+<script src="{% static '/skybrel/lib/popper/popper.min.js' %}"></script>
+<script src="{% static '/skybrel/lib/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static '/skybrel/lib/easing/easing.min.js' %}"></script>
+<script src="{% static '/skybrel/lib/counterup/jquery.waypoints.min.js' %}"></script>
+<script src="{% static '/skybrel/lib/counterup/jquery.counterup.js' %}"></script>
+<script src="{% static '/skybrel/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+<script src="{% static '/skybrel/lib/lightbox/js/lightbox.min.js' %}"></script>
+<script src="{% static '/skybrel/lib/typed/typed.min.js' %}"></script>
+<script src="{% static '/plugins/iCheck/icheck.min.js' %}"></script>
+<script src="{% static '/skybrel/bower_components/fastclick/lib/fastclick.js' %}"></script>
+<script src="{% static '/skybrel/dist/js/adminlte.min.js' %}"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<script src="{% static '/skybrel/dist/js/demo.js' %}"></script>
+<script src="{% static '/skybrel/dist/js/main.js' %}"></script>
+</body>
+</html>

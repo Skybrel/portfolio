@@ -1,0 +1,137 @@
+{% extends "portfolio/base.html" %}
+  {% load static %}
+  {% block title %}
+    <title>Home | Portfolio</title>
+  {% endblock %}
+
+  {% block loading %}
+      <div id="loading1" style="background: url({% static '/skybrel/dist/img/spinner.gif' %}) no-repeat center center;"></div>
+      </div>
+  {% endblock %}
+
+  {% block navigation %}
+    <nav class="nav-right">
+    
+      <div class="div-header">
+        <text class="logo-text">
+            <tspan><b>Skybrel</b></tspan>
+        </text>
+      </div>
+        <div class="master-menu">
+            <table class="vitamins">
+                <tr class="menuTr">
+                  <th class="menuTh bottomT" id="opt1"><a>Base64</a></th>
+                </tr>
+                <tr class="menuTr">
+                  <th class="menuTh bottomT" id="opt2"><a>Colorizer</a></th>
+                </tr>
+                <tr class="menuTr">
+                  <th class="menuTh bottomT" id="opt3"><a>QR Code</a></th>
+                </tr>
+                <tr class="menuTr">
+                  <th class="menuTh" id="opt4"><a>ThingShout</a></th>
+                </tr>
+            </table>
+        </div>
+        <i class="fa fa-long-arrow-right dirArrow"></i>
+        <section id="sub-menu">
+                <table class="nextMenu"></table>
+        </section>
+
+          <a class="text-border textr" id="a1">Apps <i class="fa fa-angle-down"></i></a>
+          {% comment %} <a class="text-border textr" href="#" id="a2">Search</a> 
+          <a class="text-border textr" href="#" id="a3">Contact</a>  {% endcomment %}
+          <a class="text-border textr" href="#projects-section" id="a4">Login</a>
+       
+        <div class="top-right-mobile-navigaton"  id="top-left-nav-right"><b> < </b>
+            <div>
+                <a id="apps">Apps</i></a>
+                {% comment %} <a href="#" id="a2">Search</a> 
+                <a href="#" id="a3">Contact</a> 
+                <a href="#" id="a4">Login</a> {% endcomment %}
+            </div>
+            <div class="glyphicon glyphicon-menu-hamburger" id="mini-mobile-menu-bar">
+                
+            </div>
+            
+        </div>
+    </nav>
+    <div class="div-sidebar" id="#hover-hide">
+          <button class="toggle-button" id="yes"><b id="toggle-text"></b></button>
+              
+          <div class="photo-div">
+              <img src="{% static '/skybrel/dist/img/photo.png' %}" class="image-circle" alt="User Image">
+          </div>
+            
+          <div class="sidebar-navigation" id="sideNavID">
+              <table class="sideTable" style="width:100%;">
+                <tr class="sideTable">
+                    <th class="sideNav sideclick sideTable" id="s1"><a class="text-border" id="home" href="">
+                      <i class="fa fa-home iconic" ></i>
+                        <span class="original hold-text" id="text1-1">Home</span>
+                    </a></th>
+                </tr>
+                <tr class="sideTable">
+                    <th class="sideNav sideclick sideTable" id="s2"><a class="text-border" id="skill" href="#skills-section">
+                    <i class="fa fa-code iconic" ></i>
+                        <span class="original hold-text" id="text2">Skills</span>
+                    </a></th>
+                </tr>
+                <tr class="sideTable">
+                    <th class="sideNav sideclick sideTable" id="s3"><a class="text-border" id="project" href="#projects-section">
+                    <i class="fa fa-lightbulb-o iconic" ></i>
+                        <span class="original hold-text" id="text3">Projects</span>
+                    </a></th>
+                </tr>
+                <tr class="sideTable">
+                    <th class="sideNav sideclick sideTable" id="s4"><a class="text-border" href="#">
+                    <i class="fa fa-paper-plane-o iconic" ></i>
+                        <span class="original hold-text" id="text4">Blog</span>
+                    </a></th>
+                </tr>
+                <tr class="sideTable">
+                    <th class="sideNav sideclick sideTable" id="s5"><a class="text-border" href="#">
+                    <i class="fa fa-file-pdf-o iconic" ></i>
+                        <span class="original hold-text" id="text5">Resume</span>
+                    </a></th>
+                </tr>
+                <tr class="sideTable">
+                    <th class="sideNav sideclick sideTable" id="s6"><a class="text-border" href="#">
+                    <i class="fa fa-info-circle iconic" ></i>
+                        <span class="original hold-text" id="text6">About</span>
+                    </a></th>
+                </tr>
+              </table>
+          </div>
+    </div>
+  {% endblock %}
+
+  {% block bodycontent %}
+  <div id="content-outer-div">
+    <div id="content-inner-div">
+      <div class="content-skelton" id="home-section">
+          <div class="container container-down">
+            <h1 class="nav4"><strong>I am Aakash Verma</strong></h1>
+            <h2 class="nav5"><strong>h</strong></h2>
+          </div>
+      </div>
+      <div class="skills-section" id="skills-section">
+         <h1>Skills</h1>
+      </div>
+      <div class="projects-section" id="projects-section">
+         <h1>Projects</h1>
+      </div>
+      {% comment %} <div class="blog-section">
+         <h1>blog</h1>
+      </div>
+      <div class="resume-section">
+         <h1>resume</h1>
+      </div>
+      <div class="about-section">
+         <h1>about</h1>
+      </div> {% endcomment %}
+      
+    </div>
+  </div>
+
+  {% endblock %}

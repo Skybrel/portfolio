@@ -1,0 +1,53 @@
+{% extends "portfolio/base64Base.html" %}
+  {% load static %}
+  {% block title %}
+    <title>Base64 | Encoder</title>
+  {% endblock %}
+  {% block loading %}
+      
+  {% endblock %}
+
+  {% block bodycontent %}
+    <nav class="nav-right-base64">
+    
+      <div class="div-headerbase64">
+        <text class="logo-text">
+            <tspan>Base64</tspan>
+        </text>
+      </div>
+        <a class="text-border textr clickme" href="/apps/base64-encoder/" id="encoder">Encoder</a> 
+        <a class="text-border textr clickme" href="/apps/base64-decoder/" id="decoder">Decoder</a> 
+        <a class="text-border textr clickme" href="#" id="about">About</a>
+    </nav>
+    {% block base64Body %}
+        <div class="content-base64">
+            <div class="div-textBox">
+                <text class="info-text" style="font-family:Ubuntu; color:rgb(255,255,255);text-transform:uppercase; font-size:32pt;">
+                    <tspan>Convert  Any  File<br>To <a>Base64</a></tspan>
+                </text>
+            </div>
+            
+            <div class="div-box1">
+                <button class="btn">OR CLICK HERE</button>
+                <form class="encoder-form" action="/user/upload-file/" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <input class="textarea form-control" type="input" name="dropped" placeholder="Drag & Drop File or Public Link" required>
+                    <input class="toggler" type="file" name="upload-file" id="upload-file" style="display:none;">
+                    <input type="submit" id="submit" style="display: none;">
+                    <input type="reset" id="resetter" style="display: none;">
+                    
+                </form>
+            </div>
+            <button class="submit-btn"><i class="glyphicon glyphicon glyphicon-cloud-upload" style="left:-4px;"></i>Convert</button>
+            <div class="progress" style="height: 30px;width: 327px;font-size: 15pt;float: left;top: 384px;position:absolute;text-align:center;left: 14%;border-radius:20px;border-color:transparent;">
+              <div class="progress-bar bg-success progress-bar-striped" style="border-radius:20px;left:-5px;"></div><p></p>
+            </div>
+            <div class="div-box2">
+                <textarea readonly class="output-text">Hello</textarea>
+            </div>
+            <div class="div-bottom">
+            </div>
+            
+        </div>
+    {% endblock %}
+  {% endblock %}
